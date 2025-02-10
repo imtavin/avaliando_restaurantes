@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.page-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffcc6d, #ffbc57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #06163a;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Aumenta o espaçamento entre os botões */
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #020d26;
+  color: white;
+  margin-top: 0; /* Remove margem superior */
+  position: fixed; /* Mantém fixo no final */
+  width: 100%;
+  bottom: 0;
+}
+
+
+.form-container {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-description {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+}
+
+.form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555555;
+  margin-bottom: 0.5rem;
+}
+
+.form-select,
+.form-input,
+.form-textarea,
+.form-file {
+  padding: 0.75rem;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-select:focus,
+.form-input:focus,
+.form-textarea:focus,
+.form-file:focus {
+  border-color: #ffa500;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background: #ffa500;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #cc8400;
+}
+
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  background: #cccccc;
+  color: #555555;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #aaaaaa;
+}
+
+.section {
+  margin-bottom: 2rem; /* mb-8 */
+}
+
+.section-title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 600; /* font-semibold */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* space-y-4 */
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  color: #374151; /* text-gray-700 */
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem 0.75rem; /* p-2.5 */
+  font-size: 1rem; /* text-base */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  border-radius: 0.375rem; /* rounded-md */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* shadow-sm */
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #3b82f6; /* focus:ring-blue-500 */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); /* focus:ring */
+}
+
+.map-section {
+  margin-bottom: 2rem; /* mb-8 */
+}
+
+.leaflet-container {
+  height: 300px;
+  width: 100%;
+  border-radius: 0.375rem; /* rounded-md */
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.map-coordinates {
+  font-size: 0.875rem; /* text-sm */
+  color: #6b7280; /* text-gray-600 */
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-primary {
+  padding: 0.75rem 1.5rem; /* py-3 px-6 */
+  font-size: 1rem; /* text-base */
+  font-weight: 600; /* font-medium */
+  color: #ffffff; /* text-white */
+  background-color: #3b82f6; /* bg-blue-500 */
+  border: none;
+  border-radius: 0.375rem; /* rounded-md */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button-primary:hover {
+  background-color: #2563eb; /* bg-blue-600 */
+}
+
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.ranking-table th, .ranking-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.ranking-table th {
+  background-color: #f4b400;
+  color: white;
+  font-weight: bold;
+}
+
+.ranking-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
